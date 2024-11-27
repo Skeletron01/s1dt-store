@@ -1,0 +1,39 @@
+function menu
+    display options of 1 for browsing store, 2 for purchasing an item & 3 for checkout
+    input for menuoption
+    if menuoption is 1 then
+        display list of items
+        run menu function
+    else if menuoption is 2 then 
+        if total items is less than 3
+          ask for what item they want to purchase
+          add selection to cart
+          increment total items by 1
+        else
+            display error message
+    else if menuoption is 3 then
+        run checkout function
+
+function checkout
+    list items in cart
+    display total price (before tax)
+    calculate 40% of total
+    display discount
+    subtract discount from total
+    display new total
+    calculate 11% of new total
+    display tax rate
+    add tax to total
+    ask for payment method
+    if card
+        display message
+        exit
+    if cash
+        ask for value
+        if value less than total ask for more
+    if value equals total
+        exit
+    if value is greater than total
+        display change
+        exit
+    display thank you message
